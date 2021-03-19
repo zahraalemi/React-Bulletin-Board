@@ -2,30 +2,40 @@
   text-align: center;
 }
 .App-header {
-  min-height: 100vh;
+  background: url(./background.jpg) center fixed;  
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+
+  background-color: #cccccc;
+  padding: 55px;
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+  position: relative;
 }
-.frame {
-  background-color: rgb(255, 255, 255);
-  height: 600px;
+/*.frame {
+   background-color: rgba(255, 255, 255, 0.55);
+  height: 100%;
+  width: 100%;
   padding: 35px;
   border-radius: 10px;
   box-shadow: 0 3px 6px rgba(43, 38, 38, 0.25);
   margin-bottom: 30px;
   display: grid;
   border: 1px solid #a2a1a1;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 1fr 1fr ; 
 
-}
+}*/
+
+
+
 .note {
-  width: 240px;
-  height: 160px;
+  width: 340px;
+  height: 260px;
   box-shadow: 0 3px 6px rgba(0,0,0,.25);
-  margin: 15px;
+  margin: 20px;
   border: 1px solid rgba(0,0,0,.25);
   padding-top: 10px;
   position: relative;
@@ -50,21 +60,49 @@
 
 }
 
+.sticky2 {
+  transform: rotate(3.5deg);
+  background-color: rgba(227, 220, 26);
+}
+
 .sticky1 {
   transform: rotate(-3.5deg);
  
-  background-color: #CBFAFA;
+  background-color: #ecb3f7;
 }
-
-.sticky2 {
-  transform: rotate(3.5deg);
-  
-  background-color: rgba(254, 246, 23, 0.804);
-}
-
 
 .text {
   margin: 4px;
   color: #282c34;
   font-size: 1rem;
 }
+
+h6{
+  margin: 0;
+}
+
+.like-btn{
+  background-color: transparent;
+  border: none;
+  font-size: 1.1rem;
+}
+.like{
+  color: #c73e19;
+  text-shadow: 3px 3px 16px #272634;
+
+}
+.dis-like{
+  color: #13a4f2;
+  text-shadow: 3px 3px 16px #272634;
+}
+
+.like-box{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+
