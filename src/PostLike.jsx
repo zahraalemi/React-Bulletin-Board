@@ -15,7 +15,9 @@ const PostLike = () => {
             {likeBtn ? (
               <h6>You Like it</h6> 
               ): null}
-             <button className="like-btn" onClick={toggleLike}>{likeBtn ? <FontAwesomeIcon className="dis-like" icon={faThumbsDown} /> : <FontAwesomeIcon className="like" icon={faHeart} />}</button>
+             <button className="like-btn" onClick={toggleLike}>
+                 {likeBtn ? <FontAwesomeIcon className="dis-like" icon={faThumbsDown} /> : <FontAwesomeIcon className="like" icon={faHeart} />}
+            </button>
              
         </div>
         

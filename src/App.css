@@ -15,32 +15,48 @@
   background-size: cover;
   position: relative;
 }
-/*.frame {
-   background-color: rgba(255, 255, 255, 0.55);
-  height: 100%;
-  width: 100%;
+.frame {
+
   padding: 35px;
-  border-radius: 10px;
-  box-shadow: 0 3px 6px rgba(43, 38, 38, 0.25);
   margin-bottom: 30px;
-  display: grid;
-  border: 1px solid #a2a1a1;
-  grid-template-columns: 1fr 1fr ; 
+  
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 1rem;
 
-}*/
 
+}
 
+ul{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 0 10px;
+}
 
 .note {
-  width: 340px;
-  height: 260px;
   box-shadow: 0 3px 6px rgba(0,0,0,.25);
   margin: 20px;
   border: 1px solid rgba(0,0,0,.25);
   padding-top: 10px;
   position: relative;
   transition: .5s ;
+}
+.note:nth-child(2){
+  grid-column: span 4;
+  grid-row: span 2;
+  background-color: #b6e6ff;
+}
 
+.note:nth-child(1){
+  grid-column: span 2;
+  
+}
+
+.note:nth-child(4),
+.note:nth-child(3){
+  grid-column: span 3;
 }
 
 .note:hover{
